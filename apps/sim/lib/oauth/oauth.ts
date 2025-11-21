@@ -141,8 +141,7 @@ export const OAUTH_PROVIDERS: Record<string, OAuthProviderConfig> = {
         icon: (props) => GoogleDriveIcon(props),
         baseProviderIcon: (props) => GoogleIcon(props),
         scopes: [
-          'https://www.googleapis.com/auth/drive.readonly',
-          'https://www.googleapis.com/auth/drive.file',
+          'https://www.googleapis.com/auth/drive', // Full Drive access (read + write all files)
         ],
         scopeHints: ['drive'],
       },
@@ -154,8 +153,7 @@ export const OAUTH_PROVIDERS: Record<string, OAuthProviderConfig> = {
         icon: (props) => GoogleDocsIcon(props),
         baseProviderIcon: (props) => GoogleIcon(props),
         scopes: [
-          'https://www.googleapis.com/auth/drive.readonly',
-          'https://www.googleapis.com/auth/drive.file',
+          'https://www.googleapis.com/auth/drive', // Full Drive access (read + write all files)
         ],
         scopeHints: ['docs'],
       },
@@ -167,8 +165,7 @@ export const OAUTH_PROVIDERS: Record<string, OAuthProviderConfig> = {
         icon: (props) => GoogleSheetsIcon(props),
         baseProviderIcon: (props) => GoogleIcon(props),
         scopes: [
-          'https://www.googleapis.com/auth/drive.readonly',
-          'https://www.googleapis.com/auth/drive.file',
+          'https://www.googleapis.com/auth/drive', // Full Drive access (read + write all files)
         ],
         scopeHints: ['sheets'],
       },
